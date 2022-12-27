@@ -1,0 +1,41 @@
+/* Frame 13 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 10px;
+
+position: absolute;
+width: 142px;
+height: 32px;
+left: 158px;
+top: 116px;
+
+background: #4CA8A8;
+border-radius: 4px;
+
+
+/* Продолжить */
+
+width: 94px;
+height: 16px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

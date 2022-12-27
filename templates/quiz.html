@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>QuizGo</title>
+                <meta name="viewport" content="initial-scale=0.1">
+                <meta name="csrf-token" content="Ok2FkJsjDk7Hn6UXfbYvc4iwUYukjBpDDzaJQfCd">
+        <link rel="icon" type="image/png" href="//cdn-cloud.quizgo.ru/assets/dashboard/build/img/favicon.ico">
+        <link href="//cdn-cloud.quizgo.ru/assets/panel/main.css?v=1670421162yGVNkJkPzCuKwlFvrujj" rel="stylesheet">
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script gtm="GTM-PJ22NJX" type="text/javascript" async="" src="https://www.google-analytics.com/gtm/optimize.js?id=GTM-PPL7GMH"></script><script type="text/javascript" async="" id="topmailru-code" src="https://top-fwz1.mail.ru/js/code.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PJ22NJX"></script><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script type="text/javascript">
+            window.getMsgQuiz = function(m) {
+                var msgQuiz = new Array();
+                msgQuiz['quiz.name'] = 'Название'
+                msgQuiz['quiz.hint_name'] = 'Подсказка для названия'
+                msgQuiz['quiz.start_page'] = 'Стартовая страница'
+                msgQuiz['quiz.first_page_show'] = 'Показывать стартовую страницу'
+                msgQuiz['quiz.picture'] = 'Изображение'
+                msgQuiz['quiz.logo_company'] = 'Логотип компании'
+                msgQuiz['quiz.logo_company_show'] = 'Выводить логотип компании'
+                msgQuiz['quiz.title'] = 'Заголовок'
+                msgQuiz['quiz.subtitle'] = 'Подзаголовок'
+                msgQuiz['quiz.text_btn'] = 'Текст на кнопке'
+                msgQuiz['quiz.logo_link'] = 'Ссылка на логотипе'
+                msgQuiz['quiz.title_page'] = 'Мета-тег TITLE страницы'
+                msgQuiz['quiz.hint_question'] = 'Как правильно составить вопросы?'
+                msgQuiz['quiz.hide_all'] = 'Свернуть всё'
+                if (msgQuiz[m] == undefined) {
+                    return '';
+                }
+                return  msgQuiz[m];
+            }
+        </script>
+                    <script type="text/javascript">
+                //metrika
+                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+                ym(53536444, "init", {
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:false
+                });
+                // tagmanager
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-PJ22NJX');</script>
+            <style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css">
+.vue-modal-resizer {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: transparent;
+  cursor: se-resize;
+}
+.vue-modal-resizer::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #ddd;
+  border-left: 10px solid transparent;
+}
+.vue-modal-resizer.clicked::after {
+  border-bottom: 10px solid #369be9;
+}
+</style><style type="text/css">
+.v--modal-block-scroll {
+  overflow: hidden;
+  width: 100vw;
+}
+.v--modal-overlay {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 1;
+}
+.v--modal-overlay.scrollable {
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.v--modal-overlay .v--modal-background-click {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+.v--modal-overlay .v--modal-box {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.v--modal-overlay.scrollable .v--modal-box {
+  margin-bottom: 2px;
+}
+.v--modal {
+  background-color: white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+  padding: 0;
+}
+.v--modal.v--modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.v--modal-top-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+  transition: all 0.2s;
+}
+.overlay-fade-enter,
+.overlay-fade-leave-active {
+  opacity: 0;
+}
+.nice-modal-fade-enter-active,
+.nice-modal-fade-leave-active {
+  transition: all 0.4s;
+}
+.nice-modal-fade-enter,
+.nice-modal-fade-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style><style type="text/css">
+.vue-dialog div {
+  box-sizing: border-box;
+}
+.vue-dialog .dialog-flex {
+  width: 100%;
+  height: 100%;
+}
+.vue-dialog .dialog-content {
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+}
+.vue-dialog .dialog-c-title {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.vue-dialog .dialog-c-text {
+}
+.vue-dialog .vue-dialog-buttons {
+  display: flex;
+  flex: 0 1 auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.vue-dialog .vue-dialog-buttons-none {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.vue-dialog-button {
+  font-size: 12px !important;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 40px;
+  height: 40px;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+.vue-dialog-button:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+.vue-dialog-button:active {
+  background: rgba(0, 0, 0, 0.025);
+}
+.vue-dialog-button:not(:first-of-type) {
+  border-left: 1px solid #eee;
+}
+</style><style type="text/css">.vue-notification-group{display:block;position:fixed;z-index:5000}.vue-notification-wrapper{display:block;overflow:hidden;width:100%;margin:0;padding:0}.notification-title{font-weight:600}.vue-notification-template{background:#fff}.vue-notification,.vue-notification-template{display:block;box-sizing:border-box;text-align:left}.vue-notification{font-size:12px;padding:10px;margin:0 5px 5px;color:#fff;background:#44a4fc;border-left:5px solid #187fe7}.vue-notification.warn{background:#ffb648;border-left-color:#f48a06}.vue-notification.error{background:#e54d42;border-left-color:#b82e24}.vue-notification.success{background:#68cd86;border-left-color:#42a85f}.vn-fade-enter-active,.vn-fade-leave-active,.vn-fade-move{transition:all .5s}.vn-fade-enter,.vn-fade-leave-to{opacity:0}</style><script type="text/javascript" async="" src="https://vk.com/js/api/openapi.js?169"></script><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/7290.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/1741.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/6108.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/7326.css"><style type="text/css">.jv-node{position:relative}.jv-node:after{content:','}.jv-node:last-of-type:after{content:''}.jv-node.toggle{margin-left:13px !important}.jv-node .jv-node{margin-left:25px}
+</style><style type="text/css">.jv-container{box-sizing:border-box;position:relative}.jv-container.boxed{border:1px solid #eee;border-radius:6px}.jv-container.boxed:hover{box-shadow:0 2px 7px rgba(0,0,0,0.15);border-color:transparent;position:relative}.jv-container.jv-light{background:#fff;white-space:nowrap;color:#525252;font-size:14px;font-family:Consolas, Menlo, Courier, monospace}.jv-container.jv-light .jv-ellipsis{color:#999;background-color:#eee;display:inline-block;line-height:0.9;font-size:0.9em;padding:0px 4px 2px 4px;margin:0 4px;border-radius:3px;vertical-align:2px;cursor:pointer;-webkit-user-select:none;user-select:none}.jv-container.jv-light .jv-button{color:#49b3ff}.jv-container.jv-light .jv-key{color:#111111;margin-right:4px}.jv-container.jv-light .jv-item.jv-array{color:#111111}.jv-container.jv-light .jv-item.jv-boolean{color:#fc1e70}.jv-container.jv-light .jv-item.jv-function{color:#067bca}.jv-container.jv-light .jv-item.jv-number{color:#fc1e70}.jv-container.jv-light .jv-item.jv-object{color:#111111}.jv-container.jv-light .jv-item.jv-undefined{color:#e08331}.jv-container.jv-light .jv-item.jv-string{color:#42b983;word-break:break-word;white-space:normal}.jv-container.jv-light .jv-item.jv-string .jv-link{color:#0366d6}.jv-container.jv-light .jv-code .jv-toggle:before{padding:0px 2px;border-radius:2px}.jv-container.jv-light .jv-code .jv-toggle:hover:before{background:#eee}.jv-container .jv-code{overflow:hidden;padding:30px 20px}.jv-container .jv-code.boxed{max-height:300px}.jv-container .jv-code.open{max-height:initial !important;overflow:visible;overflow-x:auto;padding-bottom:45px}.jv-container .jv-toggle{background-image:url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE2IiB3aWR0aD0iOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIAo8cG9seWdvbiBwb2ludHM9IjAsMCA4LDggMCwxNiIKc3R5bGU9ImZpbGw6IzY2NjtzdHJva2U6cHVycGxlO3N0cm9rZS13aWR0aDowIiAvPgo8L3N2Zz4=);background-repeat:no-repeat;background-size:contain;background-position:center center;cursor:pointer;width:10px;height:10px;margin-right:2px;display:inline-block;-webkit-transition:-webkit-transform 0.1s;transition:-webkit-transform 0.1s;transition:transform 0.1s;transition:transform 0.1s, -webkit-transform 0.1s}.jv-container .jv-toggle.open{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.jv-container .jv-more{position:absolute;z-index:1;bottom:0;left:0;right:0;height:40px;width:100%;text-align:center;cursor:pointer}.jv-container .jv-more .jv-toggle{position:relative;top:40%;z-index:2;color:#888;-webkit-transition:all 0.1s;transition:all 0.1s;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.jv-container .jv-more .jv-toggle.open{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.jv-container .jv-more:after{content:"";width:100%;height:100%;position:absolute;bottom:0;left:0;z-index:1;background:-webkit-linear-gradient(top, rgba(0,0,0,0) 20%, rgba(230,230,230,0.3) 100%);background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(230,230,230,0.3) 100%);-webkit-transition:all 0.1s;transition:all 0.1s}.jv-container .jv-more:hover .jv-toggle{top:50%;color:#111}.jv-container .jv-more:hover:after{background:-webkit-linear-gradient(top, rgba(0,0,0,0) 20%, rgba(230,230,230,0.3) 100%);background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(230,230,230,0.3) 100%)}.jv-container .jv-button{position:relative;cursor:pointer;display:inline-block;padding:5px;z-index:5}.jv-container .jv-button.copied{opacity:0.4;cursor:default}.jv-container .jv-tooltip{position:absolute}.jv-container .jv-tooltip.right{right:15px}.jv-container .jv-tooltip.left{left:15px}.jv-container .j-icon{font-size:12px}
+</style><link rel="stylesheet" href="https://code.jivo.ru/css/46b708d/widget.css" class="jv-css"><link rel="stylesheet" type="text/css" href="https://code.jivo.ru/css/46b708d/omnichannelMenu.widget.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/4597.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/167.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/4052.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/5240.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/266.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/3712.css"><link rel="stylesheet" type="text/css" href="//cdn-cloud.quizgo.ru/assets/panel/2102.css"></head>
+</head>
+<body>
+<div class="b-navbar"><div class="b-navbar__left d-flex align-items-center justify-content-start"><a href="javascript:void(0);" class="b-navbar__brand b-navbar__brand--mobile"><i class="uil uil-bars"></i></a> <div class="dropdown b-navbar__company"><a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary dropdown-toggle d-block"><small class="d-block text-left">компания</small>
+                    Моя компания 29415
+                </a> <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a data-toggle="modal" data-target="#newCompany" href="#newCompany" class="dropdown-item"><i class="uil uil-plus mr-1"></i> <span>Добавить компанию</span></a> <div class="divider"></div> <a href="https://panel.quizgo.ru/company/29415?change_company=y" class="dropdown-item" style="display: none;">
+                        Моя компания 29415
+                    </a></div></div></div> <div class="b-navbar__right d-flex align-items-center justify-content-start"><a class="b-billing-btn b-billing-btn--fake"></a> <div class="modal-knowledge position-relative"><label class="nav-link modal-knowledge__label d-flex justify-content-center align-items-center"><i class="uil uil-book-alt mr-2"></i> <span>База знаний</span></label></div> <div class="dropdown"><a href="#nolink" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle d-flex align-items-center justify-content-start text-dark"><i class="uil uil-user mr-2" style="color: rgb(197, 199, 205); font-size: 20px;"></i> <span class="b-user-email-login no-icon text-dark fs-14">
+                            dankulagin@mail.ru
+                        </span></a> <div aria-labelledby="navbarDropdownMenuLink" class="b-logout-dropdown dropdown-menu dropdown-menu-right"><!----> <div class="divider"></div> <a href="https://panel.quizgo.ru/logout" class="dropdown-item text-danger"><i class="uil uil-power mr-1"></i> Выйти
+                        </a></div></div></div></div>
+
+<div data-v-128213b0="" class="b-sidebar-2 design-system"><a href="/" class="b-sidebar-2__item b-sidebar-2__item--back"><i class="uil uil-arrow-left"></i> <span class="b-sidebar-2__text">
+            Назад в проекты
+        </span></a> <a href="/company/29415/project/51264/quiz/64883/edit/start" class="b-sidebar-2__item mt--26"><i class="uil uil-web-section"></i>
+        Стартовая
+    </a> <a href="/company/29415/project/51264/quiz/64883/edit/questions" class="b-sidebar-2__item b-sidebar-2__item--active b-sidebar-2__item--active"><i class="uil uil-question-circle"></i>
+        Вопросы
+        </a>
+    <form method="post" action="/survey_designer" class="form-contact">
+        <form method="post">
+  <p><label class="b-sidebar-2__item b-sidebar-2__item--active b-sidebar-2__item--active">Что будем создавать?</label>
+  <p><label class="b-sidebar-2__item b-sidebar-2__item--active b-sidebar-2__item--active">Болезнь:</label>
+        <textarea name="disease" id="disease" rows=1 cols=15></textarea><br>
+        <input type="submit" class="btn btn-success" value="Создать"/>
+            </form>
+    </form>
+
+<label class="list-group-item d-flex gap-2">
+
+      <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1" value="" checked="">
+      <span>
+        Квиз
+      </span>
+</label>
+<label class="list-group-item d-flex gap-2">
+      <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1" value="" checked="">
+      <span>
+        Опрос
+      </span>
+</label>
+</div>
+<div data-v-128213b0="" class="b-admin-content"><!----> <div class="b-quiz-builder" integrations="[object Object]" quiz="[object Object]" data-v-128213b0=""><div class="container-fluid"><div class="row">
+    <div class="col-xl-7 col-lg-8 p-0"><div class="question__top_links d-flex justify-content-between"><a href="Как правильно составить вопросы?" target="_blank" class="black-link underline">
+                        Как правильно составить вопросы?
+                    </a> <div><a href="#quizgo" class="black-link pull-right">
+                            Свернуть всё
+                        </a> <a href="#quizgo" class="black-link pull-right mr-3">
+                            Развернуть всё
+                        </a></div></div></div></div> <div class="row"><div class="col-xl-7 col-lg-8 p-0"><div><span><div data-id="0" class="question__question"><a title="Добавить вопрос" class="question__add-question"></a> <div class="card question_card"><div class="card-header"><span class="question_card__number">№1</span> <!----> <!----> <!----> <!----> <!----> <img src="//cdn-cloud.quizgo.ru/assets/panel/4d2fd8b309b1563e6f7e.svg" title="Загрузка своего файла" class="mr-2 question_card__icon"> <!----> <img src="//cdn-cloud.quizgo.ru/assets/panel/0423c6d0be8eb3587cf7.svg" title="Можно несколько" class="mr-1 question_card__icon"> <!----> <!----> <span class="card-title">Первый вопрос</span>
+                            <div class="btn-group question_card__actions"><div class="d-flex align-items-center mr-2"><label class="switch b-switch-question-view m-0"><input type="checkbox" value="1" name="question_view_01" class="primary"> <span class="slider round"></span></label></div> <button type="button" class="btn btn-default btn-outline"><i class="uil uil-minus"></i></button> <button type="button" class="btn btn-default btn-outline"><i class="uil uil-trash-alt"></i></button> <button type="button" class="btn btn-default btn-outline"><i class="uil uil-copy"></i></button> <button type="button" class="btn btn-default btn-outline js-drag-question"><i class="uil uil-expand-arrows rotate drag"></i></button></div></div> <div class="card-body">
+                           <div class="question-types is-grid d-none"><div class="question-types__item"><div class="question-types__block"><div class="question-types__img-block"><img src="//cdn-cloud.quizgo.ru/assets/panel/51ab939b1546899e6219.svg"></div> <div class="question-types__title">Варианты ответов</div></div></div> <div class="question-types__item"><div class="question-types__block"><div class="question-types__img-block"><img src="//cdn-cloud.quizgo.ru/assets/panel/9e65083c4f2fc229450d.svg"></div> <div class="question-types__title">Варианты с картинками</div></div></div> <div class="question-types__item"><div class="question-types__block"><div class="question-types__img-block"><img src="//cdn-cloud.quizgo.ru/assets/panel/012f05d13af5670a616a.svg"></div> <div class="question-types__title">Варианты и картинка</div></div></div> <div class="question-types__item"><div class="question-types__block"><div class="question-types__img-block"><img src="//cdn-cloud.quizgo.ru/assets/panel/81849d9f05d05d4ade21.svg"></div> <div class="question-types__title">Своё поле для ввода</div></div></div> <div class="question-types__item"><div class="question-types__block"><div class="question-types__img-block"><img src="//cdn-cloud.quizgo.ru/assets/panel/77199bc2f1fb338ed4c4.svg"></div> <div class="question-types__title">Выпадающий список</div></div></div> <div class="question-types__item"><div class="question-types__block"><div class="question-types__img-block"><img src="//cdn-cloud.quizgo.ru/assets/panel/996be287bb0d4343089c.svg"></div> <div class="question-types__title">Дата</div></div></div> <div class="question-types__item"><div class="question-types__block"><div class="question-types__img-block"><img src="//cdn-cloud.quizgo.ru/assets/panel/5237e18936699a1354e5.svg"></div> <div class="question-types__title">Ползунок</div></div></div></div> <div class="form-group"><label>Вопрос <i data-toggle="tooltip" data-placement="top" title="" class="uil uil-info-circle" data-original-title="Например, 'какая марка вашего авто?'"></i></label> <input type="text" placeholder="Заголовок вопроса" class="form-control"></div> <div class="form-group"><label>Подсказка консультанта <i data-toggle="tooltip" data-placement="top" title="" class="uil uil-info-circle" data-original-title="Например, 'Ответ на этот вопрос, поможет точнее выбрать деталь для вашего авто'"></i></label> <textarea rows="2" class="form-control"></textarea></div> <div class="question__type_wrap"><div class="row"><div class="col-sm-3"><div class="question__type_block"><div class="question__type_answer">Ответы</div> <div class="question__type_title">Варианты ответов </div></div></div> <div class="col"><div class="question__type_tabs mb-3 pull-right"><li data-toggle="tooltip" data-placement="top" data-original-title="Вопрос с типом карточки" class="nav-item"><a class="nav-link"><img src="//cdn-cloud.quizgo.ru/assets/panel/51ab939b1546899e6219.svg"></a></li> <li data-toggle="tooltip" data-placement="top" data-original-title="Вопрос с типом карточки с картинками" class="nav-item"><a class="nav-link"><img src="//cdn-cloud.quizgo.ru/assets/panel/9e65083c4f2fc229450d.svg"></a></li> <li data-toggle="tooltip" data-placement="top" data-original-title="Вопрос с типом свободный текст" class="nav-item"><a class="nav-link"><img src="//cdn-cloud.quizgo.ru/assets/panel/81849d9f05d05d4ade21.svg"></a></li> <li data-toggle="tooltip" data-placement="top" data-original-title="Вопрос с типом выпадающий список" class="nav-item"><a class="nav-link"><img src="//cdn-cloud.quizgo.ru/assets/panel/77199bc2f1fb338ed4c4.svg"></a></li> <li data-toggle="tooltip" data-placement="top" data-original-title="Вопрос с типом дата" class="nav-item"><a class="nav-link"><img src="//cdn-cloud.quizgo.ru/assets/panel/996be287bb0d4343089c.svg"></a></li> <li data-toggle="tooltip" data-placement="top" data-original-title="Вопрос с типом ползунок" class="nav-item"><a class="nav-link"><img src="//cdn-cloud.quizgo.ru/assets/panel/5237e18936699a1354e5.svg"></a></li> <li data-toggle="tooltip" data-placement="top" data-original-title="Вопрос с типом загрузка файла" class="nav-item"><a class="nav-link active-type"><img src="//cdn-cloud.quizgo.ru/assets/panel/4d2fd8b309b1563e6f7e.svg"></a></li></div></div></div></div> <!----> <!----> <!----> <!----> <!----> <!----> <div><div class="answer-variants"><span class="small">
+                                     Дайте пользователю возможность загрузить свой собственный файл
+                                    <br> <br> <b>Важно! Мы допускаем к загрузке только файлы популярных форматов. </b></span> <div class="form-group"><label>ТИП ФАЙЛА</label> <select name="" class="form-control"><option value="all">
+                                                        Все типы файлов
+                                                    </option> <option value="images">
+                                                        Изображения
+                                                    </option> <option value="videos">
+                                                        Видео
+                                                    </option> <option value="docs">
+                                                        Документы
+                                                    </option></select></div> <div class="question__checkboxes form-actions"><div><label for="upload_required"><input type="checkbox" id="upload_required">
+                                                        Можно несколько</label></div> <div><label for="upload_multiple"><input type="checkbox" id="upload_multiple">
+                                                        Обязательный вопрос </label></div></div></div></div> <div id="pills-tabContent" class="tab-content"><div id="pills-list-cards" class="tab-pane fade"><div class="answer-variants"><div drake="answers"><div class="question__answerGroup form-group"><div class="question__answer"><div class="answer answer_type_image"><div class="answer__container"><label class="image-upload answer__image-upload image-upload_small image-upload_uploadable"><div title="Нажмите для загрузки изображения" class="image-upload__upload"><div class="image-upload__upload-img"></div> <input type="file" tabindex="-1" accept="image/*" class="image-upload__input"></div> <div title="" data-original-title="Размер файла - до 5MB. Допустимые форматы: png, jpg, gif, svg" class="image-upload__file-size"><span>5MB max</span></div></label> <input type="text" class="answer__input form-control"> <a id="popover1" data-original-title="<span>Подсказка для варианта</span>" class="btn btn-link answer__hint"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIxMDI0IiB3aWR0aD0iMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOTUwLjE1NCAxOTJINzMuODQ2QzMzLjEyNyAxOTIgMCAyMjUuMTI2OTk5OTk5OTk5OTUgMCAyNjUuODQ2djQ5Mi4zMDhDMCA3OTguODc1IDMzLjEyNyA4MzIgNzMuODQ2IDgzMmg4NzYuMzA4YzQwLjcyMSAwIDczLjg0Ni0zMy4xMjUgNzMuODQ2LTczLjg0NlYyNjUuODQ2QzEwMjQgMjI1LjEyNjk5OTk5OTk5OTk1IDk5MC44NzUgMTkyIDk1MC4xNTQgMTkyek01NzYgNzAzLjg3NUw0NDggNzA0VjUxMmwtOTYgMTIzLjA3N0wyNTYgNTEydjE5MkgxMjhWMzIwaDEyOGw5NiAxMjggOTYtMTI4IDEyOC0wLjEyNVY3MDMuODc1ek03NjcuMDkxIDczNS44NzVMNjA4IDUxMmg5NlYzMjBoMTI4djE5Mmg5Nkw3NjcuMDkxIDczNS44NzV6Ii8+PC9zdmc+" width="20" id="popover2" data-original-title="<b>В этом поле можно использовать markdown</b>" data-placement="top" class="pull-right"> <i class="uil uil-comments-alt"></i></a> <div id="popover_content_wrapper1" style="display: none;"><textarea name="hint" rows="3" value="" class="form-control"></textarea></div></div> <div class="answer__under-input" style="display: none;"><span class="answer__under-input_arrows">↑↓</span> <span class="answer__under-input_enter pull-right">Enter↵ <span class="simple">чтобы добавить ещё один</span></span></div></div><button tabindex="-1" class="btn btn-link question__delete-answer"><i class="uil uil-trash-alt"></i></button></div> <i class="uil uil-expand-arrows rotate question__moveAnswer"></i></div> <div class="question__answerGroup form-group"><div class="question__answer"><div class="answer answer_type_image"><div class="answer__container"><label class="image-upload answer__image-upload image-upload_small image-upload_uploadable"><div title="Нажмите для загрузки изображения" class="image-upload__upload"><div class="image-upload__upload-img"></div> <input type="file" tabindex="-1" accept="image/*" class="image-upload__input"></div> <div title="" data-original-title="Размер файла - до 5MB. Допустимые форматы: png, jpg, gif, svg" class="image-upload__file-size"><span>5MB max</span></div></label> <input type="text" class="answer__input form-control"> <a id="popover1" data-original-title="<span>Подсказка для варианта</span>" class="btn btn-link answer__hint"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIxMDI0IiB3aWR0aD0iMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOTUwLjE1NCAxOTJINzMuODQ2QzMzLjEyNyAxOTIgMCAyMjUuMTI2OTk5OTk5OTk5OTUgMCAyNjUuODQ2djQ5Mi4zMDhDMCA3OTguODc1IDMzLjEyNyA4MzIgNzMuODQ2IDgzMmg4NzYuMzA4YzQwLjcyMSAwIDczLjg0Ni0zMy4xMjUgNzMuODQ2LTczLjg0NlYyNjUuODQ2QzEwMjQgMjI1LjEyNjk5OTk5OTk5OTk1IDk5MC44NzUgMTkyIDk1MC4xNTQgMTkyek01NzYgNzAzLjg3NUw0NDggNzA0VjUxMmwtOTYgMTIzLjA3N0wyNTYgNTEydjE5MkgxMjhWMzIwaDEyOGw5NiAxMjggOTYtMTI4IDEyOC0wLjEyNVY3MDMuODc1ek03NjcuMDkxIDczNS44NzVMNjA4IDUxMmg5NlYzMjBoMTI4djE5Mmg5Nkw3NjcuMDkxIDczNS44NzV6Ii8+PC9zdmc+" width="20" id="popover2" data-original-title="<b>В этом поле можно использовать markdown</b>" data-placement="top" class="pull-right"> <i class="uil uil-comment-alt"></i></a> <div id="popover_content_wrapper1" style="display: none;"><textarea name="hint" rows="3" value="" class="form-control"></textarea></div></div> <div class="answer__under-input" style="display: none;"><span class="answer__under-input_arrows">↑↓</span> <span class="answer__under-input_enter pull-right">Enter↵ <span class="simple">чтобы добавить ещё один</span></span></div></div><button tabindex="-1" class="btn btn-link question__delete-answer"><i class="uil uil-trash-alt"></i></button></div> <i class="uil uil-expand-arrows rotate question__moveAnswer"></i></div></div> <button class="btn btn-link btn-primary"><i class="uil uil-plus">&nbsp;</i>Добавить вариант</button> <div class="form-group"><label>ЗАГОЛОВОК</label> <input type="text" value="Узнай стоимость и сроки выкупа своего автомобиля" class="form-control"></div> <div class="form-group"><label>ИЗОБРАЖЕНИЕ
+                                                        <input type="file" class="filepond"></label></div> <div class="question__checkboxes form-actions"><div class="checkbox"><input id="checkbox4" type="checkbox" checked="checked"> <label for="checkbox4">Позволить пользователю вводить свой ответ</label></div> <div class="checkbox"><input id="checkbox5" type="checkbox" checked="checked"> <label for="checkbox5">Необязательный вопрос</label></div></div></div></div> <div id="pills-date" class="tab-pane fade"><div class="answer-variants"><p class="small">Пользователю будет предложено выбрать дату</p> <div class="question__checkboxes form-actions"><div class="checkbox"><input id="checkbox9" type="checkbox" checked="checked"> <label for="checkbox9">Выбор диапазона дат</label></div> <div class="checkbox"><input id="checkbox10" type="checkbox" checked="checked"> <label for="checkbox10">Выбор времени</label></div> <div class="checkbox"><input id="checkbox11" type="checkbox" checked="checked"> <label for="checkbox11">Необязательный вопрос</label></div></div></div></div></div></div> <div class="card-footer"><button type="button" class="btn btn-default btn-outline question_card__footer_icon_btn"><i class="uil uil-lg uil-code-branch"></i> <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Будет показан при условии" class="js-condition-count badge badge-pill badge-warning font-weight-bold">
+                                0
+                            </span></button></div></div></div></span></div> <button type="button" class="btn btn-primary btn-fill"><i class="uil uil-plus"></i>&nbsp;Добавить вопрос</button> <br> <br> <br> <br></div>
+<!--                    <div class="col-xl-5 col-lg-4">-->
+<!--                        <div class="card">-->
+<!--                            <div class="card-header"><h5 class="card-title">Консультант</h5></div>-->
+<!--                            <div class="card-body">-->
+<!--                                <div class="row"><div class="col-xl-5 card-body__image-upload-block">-->
+<!--                                    <div class="b-bg&#45;&#45;image" style="background-image: url(&quot;//panel.quizgo.ru/assets/dashboard/build/img/default-consultant.png&quot;);"></div></div>-->
+<!--                                    <div data-v-debd8a7e="" class="d-inline-block p-3"><input data-v-debd8a7e="" type="file">-->
+<!--                                        <div data-v-debd8a7e="" class="file-upload">-->
+<!--                                            <div data-v-debd8a7e=""><a data-v-debd8a7e="" href="javascript:void(0);" class="btn btn-success">Выбрать фото</a>&lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt;</div></div></div>-->
+<!--                                    <div class="col-xl-6 card-body__input-block">-->
+<!--                                        <div class="form-group"><label>-->
+<!--                        Имя-->
+<!--                        <input type="text" class="form-control"></label></div>-->
+<!--                                        <div class="form-group"><label>-->
+<!--                        Должность-->
+<!--                        <input type="text" maxlength="42" class="form-control"></label></div></div></div>-->
+<!--                                <div class="row">-->
+<!--                                    <div class="col-12"><span class="small">-->
+<!--                     Чтобы показывался консультант, нужно заполнить подсказку в редактировании вопроса-->
+<!--                </span> <p class="font-weight-bold mt-2 mb-0 mr-2 d-inline-flex align-items-center"><label class="switch b-switch-question-view m-0"><input type="checkbox" class="primary"> <span class="slider round"></span></label> <span class="ml-2">  Не сворачивать подсказки консультанта в мобильной версии-->
+<!--                        <span class="badge badge-pill badge-icon badge-warning font-weight-bold"><i class="uil uil-fire"></i>-->
+<!--                              Новая фича-->
+<!--                        </span></span></p></div></div></div></div>-->
+<!--                        <div>-->
+<!--                            <div class="card b-right-answers__promo-block">-->
+<!--                                <div class="card-body">-->
+<!--                                    <div class="row">-->
+<!--                                        <div class="col-3 col-left"><img src="//cdn-cloud.quizgo.ru/assets/panel/bbf0fad7043345517092.svg" title="Квиз как тест"></div> -->
+<!--                                        <div class="col-9 col-right">-->
+<!--                                            <div class="mb-2 d-flex align-items-center"><h4 class="font-weight-bold mt-0 mb-0 mr-2 d-inline-flex align-items-center"><label class="switch b-switch-question-view m-0"><input type="checkbox" class="primary"> <span class="slider round"></span></label> <span class="ml-2">Квиз как тест</span></h4></div> <p class="small">-->
+<!--                        При ответе на вопрос будет показываться, какой ответ правильный или неправильный, и текст-пояснение-->
+<!--                    </p> <button type="button" data-toggle="modal" data-target="#builder-right-answers" class="btn btn-md btn-secondary mb-2"><i class="uil uil-cog mr-2"></i> <span>Настроить ответы</span></button></div></div></div></div> -->
+<!--                            <div id="builder-right-answers" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">-->
+<!--                                <div role="document" class="modal-dialog modal-lg b-right-answers__modal">-->
+<!--                                    <div class="modal-content">-->
+<!--                                        <div class="modal-header align-items-center"><h3 class="modal-title font-weight-bold">Настроить ответы</h3> -->
+<!--                                            <div class="buttons"><button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-link">-->
+<!--                            Закрыть-->
+<!--                        </button> <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-primary btn-fill">-->
+<!--                            Сохранить-->
+<!--                        </button></div></div> -->
+<!--                                        <div class="modal-body"><p class="b-right-answers__intro-text small">-->
+<!--                        Выберите правильные ответы. Также вы можете добавить комментарий к правильным и неправильным ответам.-->
+<!--                        <a target="_blank" href="https://quizgo.ru/docs/kviz-oprosy/kviz-kak-test/">  Подробнее о работе с функцией “Квиз как тест”</a></p> &lt;!&ndash;&ndash;&gt;</div></div></div></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+</div>
+    <div id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="conditionModal" aria-hidden="true" class="modal fade"><div role="document" class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 id="conditionModalLabel" class="modal-title font-weight-bold">
+
+                    Условие видимости(<span> Первый вопрос </span>)
+                </h5> <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></div> <div class="modal-body"> <button type="button" class="btn btn-primary"><i class="uil uil-plus"></i>&nbsp; Добавить условие
+                </button> <br><br> <div><span>  Тип условия</span> <select class="form-control"><option value="">--не выбрано--</option> <option value="or">Обязательно хотя бы одно условие</option> <option value="and">Все условия обязательны</option></select></div></div> <div class="modal-footer flex-end"><button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-primary btn-fill">
+                    Сохранить и выйти
+                </button></div></div></div></div></div></div> <div data-v-128213b0="" class="vue-notification-group" style="width: 400px; top: 0px; right: 0px;"><span></span></div></div>
+</body>
+</html>

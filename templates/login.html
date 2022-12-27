@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+зшсерук
+{% endblock %}
+
+{% block body %}
+<!--action="/login"-->
+<form method="post" class="form-contact">
+  <p><label>Имя: </label> <input type="text" name="username" value="" required />
+  <p><label>Пароль: </label> <input type="password" name="psw" value="" required />
+  <p><input type="submit" value="Войти" />
+
+</form>
+
+{% endblock %}
